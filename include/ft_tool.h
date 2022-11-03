@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 19:19:40 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/11/01 16:49:33 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/11/02 15:52:28 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_bzero(void *s, size_t n);
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
-
+int		ft_isenv(char c);
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);

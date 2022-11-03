@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_terminal.h                                      :+:      :+:    :+:   */
+/*   ft_isenv.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/01 08:16:36 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/11/03 17:58:58 by kyoulee          ###   ########.fr       */
+/*   Created: 2022/11/02 15:50:52 by kyoulee           #+#    #+#             */
+/*   Updated: 2022/11/02 15:52:04 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TERMINAL_H
-# define FT_TERMINAL_H
+#include <ft_tool.h>
 
-# include <termios.h>
-
-void ft_terminal_printf(struct termios tty);
-void ft_bash_ttyset(struct termios *tty);
-void ft_cmd(const char *history);
-void ft_tty_loop();
-
-#endif
+int	ft_isenv(char c)
+{
+	if (ft_isalpha(c) || ft_isdigit(c) || c == '_')
+		return (1);
+	return (0);
+}

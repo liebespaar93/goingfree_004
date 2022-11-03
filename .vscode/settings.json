@@ -40,6 +40,7 @@
 		"ft_echo.h": "c",
 		"sockio.h": "c",
 		"filio.h": "c",
-		"ft_terminal.h": "c"
+		"ft_terminal.h": "c",
+		"ft_dir.h": "c"
 	}
 }
