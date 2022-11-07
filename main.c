@@ -23,7 +23,6 @@
 #include <ft_export_tool.h>
 #include <ft_terminal.h>
 
-
 int main(void)
 {
 	struct termios	oldtty;

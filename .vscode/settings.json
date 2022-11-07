@@ -41,6 +41,10 @@
 		"sockio.h": "c",
 		"filio.h": "c",
 		"ft_terminal.h": "c",
-		"ft_dir.h": "c"
+		"ft_dir.h": "c",
+		"strings.h": "c",
+		"fcntl.h": "c",
+		"limits.h": "c",
+		"syslimits.h": "c"
 	}
 }

@@ -57,7 +57,7 @@ void ft_bash_ttyset(struct termios *tty)
 {
 	if (!tty)
 		return ;
-	(*tty).c_iflag = BRKINT |  ICRNL | IXON | IXANY | IMAXBEL | IUTF8;
+	(*tty).c_iflag = BRKINT | ICRNL | IXON | IXANY | IMAXBEL | IUTF8;
 	(*tty).c_oflag = OPOST | ONLCR;
 	(*tty).c_cflag = CSIZE | CREAD | HUPCL;
 	(*tty).c_lflag = ECHOKE | ECHOE | ECHOK | ECHO | ECHOCTL | ISIG | ICANON | IEXTEN | PENDIN;

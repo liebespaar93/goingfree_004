@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:55:35 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/11/03 18:04:32 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/11/07 08:34:21 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,56 +16,200 @@
 #include <ft_tool.h>
 #include <stdlib.h>
 #include <ft_terminal.h>
+#include <sys/syslimits.h>
 
-
-char *ft_stack(char stack[64])
+int ft_work(char *history_str)
 {
-	int		rl_len;
-	int		stack_len;
+	int		history_start;
+	int		history_end;
 	int		i;
+	int		flag;
 
-	rl_len = ft_strlen(rl_line_buffer);
 	i = 0;
-	while (i < rl_len)
+	flag = 0;
+	history_start = 0;
+	history_end = 0;
+	while (rl_line_buffer[i])
 	{
-		stack_len = ft_strlen(stack);
-		if (ft_strchr("\'\"&|", rl_line_buffer[i]))
+		if (!ft_strncmp("\"", rl_line_buffer + i , 1) && ++flag)
 		{
-			if (stack_len && stack[stack_len - 1] == rl_line_buffer[i])
-				stack[stack_len - 1] = '\0';
-			else if (!stack_len || !ft_strchr("\'\"", stack[stack_len - 1]))
-				stack[stack_len] = rl_line_buffer[i];
+			i++;
+			while (ft_strncmp("\"", rl_line_buffer + i , 1))
+			{
+				if (!rl_line_buffer[++i])
+				{
+					printf("in > \" \n");
+					free(readline("> "));
+					ft_strcat(history_str, rl_line_buffer);
+					history_end += i;
+					i = 0;
+				}
+			}
+			i++;
 		}
-		i++;
+		else if (!ft_strncmp("\'", rl_line_buffer + i, 1) && ++flag)
+		{
+			i++;
+			while (ft_strncmp("\'", rl_line_buffer + i, 1))
+			{
+				if (!rl_line_buffer[++i])
+				{
+					printf("in > \' \n");
+					free(readline("> "));
+					ft_strcat(history_str, rl_line_buffer);
+					history_end += i;
+					i = 0;
+				}
+			}
+			i++;
+		}
+		else if (!ft_strncmp("||", rl_line_buffer + i, 2))
+		{
+			i += 2;
+			if (!flag && printf("syntax error near unexpected token `||'\n"))
+				return(ERROR_SYNTAX);
+			while (!rl_line_buffer[i] || ft_strchr(WHITE_SPACE, rl_line_buffer[i]))
+			{
+				if (!rl_line_buffer[i])
+				{
+					printf("in > || \n");
+					if (history_str[ft_strlen(history_str) - 1] == '\n')
+						history_str[ft_strlen(history_str) - 1] = ' ';
+					free(readline("> "));
+					ft_strcat(history_str, rl_line_buffer);
+					history_end += i;
+					i = 0;
+				}
+				else
+					i++;
+			}
+			flag = 0;
+		}
+		else if (!ft_strncmp("&&", rl_line_buffer + i, 2))
+		{
+			i += 2;
+			if (!flag && printf("syntax error near unexpected token `&&'\n"))
+				return(ERROR_SYNTAX);
+			while (!rl_line_buffer[i] || ft_strchr(WHITE_SPACE, rl_line_buffer[i]))
+			{
+				if (!rl_line_buffer[i])
+				{
+					printf("in > && \n");
+					if (history_str[ft_strlen(history_str) - 1] == '\n')
+						history_str[ft_strlen(history_str) - 1] = ' ';
+					free(readline("> "));
+					ft_strcat(history_str, rl_line_buffer);
+					history_end += i;
+					i = 0;
+				}
+				else
+					i++;
+			}
+			flag = 0;
+		}
+		else if (!ft_strncmp("|", rl_line_buffer + i, 1))
+		{
+			i++;
+			if (!flag && printf("syntax error near unexpected token `|'\n"))
+				return(ERROR_SYNTAX);
+			//ft_pipe_child(history_str, history_start, history_end, i);
+			/*
+				fork 실행 ( 자식 실행) 
+			*/
+			history_start = history_end + i;
+			while (!rl_line_buffer[i] || ft_strchr(WHITE_SPACE, rl_line_buffer[i]))
+			{
+				if (!rl_line_buffer[i])
+				{
+					printf("in > | \n");
+					if (history_str[ft_strlen(history_str) - 1] == '\n')
+						history_str[ft_strlen(history_str) - 1] = ' ';
+					free(readline("> "));
+					ft_strcat(history_str, rl_line_buffer);
+					history_end += i;
+					i = 0;
+				}
+				else
+					i++;
+			}
+			flag = 0;
+		}
+		else
+		{
+			if (!ft_strchr(WHITE_SPACE, rl_line_buffer[i]))
+				flag = 1;
+			i++;
+		}
 	}
-	return (stack);
+	return (history_start);
+}
+
+
+#include <ft_file.h>
+
+void ft_exe(char *history_str)
+{
+	t_cmd	cmd;
+	
+	if (!ft_cmd_init(&cmd, history_str))
+		return ;
+	if (ft_strncmp(cmd.argv[0], "echo", 4))
+	{
+
+	}
+	else if (ft_strncmp(cmd.argv[0], "cd", 2))
+	{
+		
+	}
+	else if (ft_strncmp(cmd.argv[0], "export", 6))
+	{
+		
+	}
+	else if (ft_strncmp(cmd.argv[0], "unset", 5))
+	{
+		
+	}
+	else if (ft_strncmp(cmd.argv[0], "env", 3))
+	{
+		
+	}
+	else if (ft_strncmp(cmd.argv[0], "exit", 3))
+	{
+		
+	}
+	else if (ft_strncmp(cmd.argv[0], ".", 1))
+	{
+		
+	}
+	else
+	{
+		//ft_get_file(cmd.argv[0]);
+	}
+
 }
 
 void ft_tty_loop()
 {
-	char	history_str[2048];
-	char	stack[64];
-
-	ft_bzero(stack, sizeof(char [64]));
+	char	history_str[ARG_MAX];
+	int		last_cmd;
+	
+	ft_bzero(history_str, sizeof(char [ARG_MAX]));
 	while (1)
 	{
 		*history_str = '\0';
-		free(readline("minishell-0.3v : "));
-		if (ft_strlen(history_str) + ft_strlen(rl_line_buffer) >= 2048)
-			exit(-1);
-		ft_strcat(history_str, (const char *)rl_line_buffer);
-		ft_strcpy(stack, ft_stack(stack));
-		while (*stack)
+		free(readline("\033[38;5;226mminishell-0.3v : \033[0m"));
+		ft_strcat(history_str, rl_line_buffer);
+		last_cmd = ft_work(history_str);
+		if (last_cmd)
 		{
-			free(readline("> "));
-			if (ft_strlen(history_str) + ft_strlen(rl_line_buffer) >= 2048)
-				exit(-1);
-			ft_strcat(history_str, (const char *)rl_line_buffer);
-			ft_strcpy(stack, ft_stack(stack));
+			/* fork 할것! (자식 실행)*/
 		}
-		ft_cmd((const char *)history_str);
+		else
+		{
+			/*집접 실행 (부모실행)*/
+			ft_exe(history_str + last_cmd);
+		}
 		add_history(history_str);
-		if (rl_line_buffer[0]=='z')
-			break ;
+		printf("history : %s\n",history_str);
 	}
 }

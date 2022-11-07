@@ -6,7 +6,7 @@
 /*   By: kyoulee <kyoulee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 19:19:40 by kyoulee           #+#    #+#             */
-/*   Updated: 2022/11/02 15:52:28 by kyoulee          ###   ########.fr       */
+/*   Updated: 2022/11/07 03:39:31 by kyoulee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define FT_TOOL_H
 
 #include <sys/_types/_size_t.h>
+
+# define WHITE_SPACE "\t\n\v\f\r "
 
 size_t	ft_void_len(void *ptr[]);
 size_t	ft_strlen(const char *str);
