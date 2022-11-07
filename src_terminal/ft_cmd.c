@@ -126,7 +126,7 @@ char	**ft_cmd_argv(t_cmd *cmd, char *history_str)
 			if (size)
 			{
 				printf("size : %d %c \n", size, history_str[i -1]);
-				cmd->argv[index++] = ft_strncpy(history_str + i - 1 - size, size + 1);
+				cmd->argv[index++] = ft_strncpy(history_str + i - size, size);
 				size = 0;
 			}
 			i++;
@@ -134,6 +134,7 @@ char	**ft_cmd_argv(t_cmd *cmd, char *history_str)
 		else if (history_str[i] == '\'')
 		{
 			i++;
+			size++;
 			while (history_str[i++] != '\'')
 				size++;
 			size++;
@@ -141,6 +142,7 @@ char	**ft_cmd_argv(t_cmd *cmd, char *history_str)
 		else if (history_str[i] == '\"')
 		{
 			i++;
+			size++;
 			while (history_str[i++] != '\"')
 				size++;
 			size++;

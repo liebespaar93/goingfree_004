@@ -9,4 +9,6 @@ cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_built
 
 cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c src_dir/**.c src_file/**.c src_terminal/**.c  -I include/ -I include/builtin/  -lreadline
 
+cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c src_dir/**.c src_file/**.c src_terminal/**.c  -I include/ -I include/builtin/  -lreadline
+
  "\'`@$><=;|&{(
