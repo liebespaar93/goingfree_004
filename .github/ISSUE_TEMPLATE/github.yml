@@ -13,7 +13,6 @@ name: :octocat: 이슈 보고서
 						[마크다운을 지원합니다](#)
 						- 다음줄에 기입이 가능하며
 						- [ ] 깃 허브 마크다운으로 작동합니다
-
 			- type: input
 				id: input_id
 				attributes:
@@ -22,7 +21,6 @@ name: :octocat: 이슈 보고서
 					placeholder: 🫧 <ex. 예시 문장>
 				validations:
 					required: true
-
 			- type: textarea
 				id: textarea_id
 				attributes:
@@ -38,7 +36,6 @@ name: :octocat: 이슈 보고서
 					render: bash
 				validations:
 					required: true
-
 			- type: dropdown
 				id: dropdown_id_sing
 				attributes:
@@ -52,7 +49,6 @@ name: :octocat: 이슈 보고서
 					default: 0
 				validations:
 					required: true
-
 			- type: dropdown
 				id: dropdown_id_mult
 				attributes:
@@ -64,7 +60,6 @@ name: :octocat: 이슈 보고서
 						- <선택지2>
 						- <선택지3>
 					default: 0
-     
 			- type: checkboxes
 				id: checkboxes_id
 				attributes:
