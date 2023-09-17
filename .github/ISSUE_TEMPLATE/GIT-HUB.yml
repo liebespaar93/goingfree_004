@@ -54,44 +54,40 @@ body:
         Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
       render: 'shell'
     validations:
-      required: false
+      required: true
   - type: dropdown
-    id: version
+    id: dropdown_id_single
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      multiple: true
+      label: 📣 <질문 사항(드롭 박스 싱글)>
+      description: 💭 <옅은 설명글>
+      multiple: false
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-        - 1.0.4 (Edge)
+        - <선택지1>
+        - <선택지2>
+        - <선택지3>
       default: 1
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: dropdown_id_mult
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: 📣 <질문 사항(드롭 박스 멀티)>
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-      default: 1
+        - <선택지1>
+        - <선택지2>
+        - <선택지3>
     validations:
       required: true
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
-    id: terms
+    id: checkboxes_id
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: 📣 <질문 사항(체크 박스)>
+      description: 💭 <옅은 설명글>
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: <체크항목 1>
           required: true
+        - label: <체크항목 2>
+          required: true
+        - label: <체크항목 2>
+          required: false
