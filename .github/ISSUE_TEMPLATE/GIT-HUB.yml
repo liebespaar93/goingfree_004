@@ -39,9 +39,9 @@ body:
     validations:
       required: false
   - type: textarea
-    id: textarea_id
+    id: textarea_id_log
     attributes:
-      label: 📣 <질문 사항(텍스트 어레이)>
+      label: 📣 <질문 사항(텍스트 어레이) log>
       description: 💭 <옅은 설명글>
       placeholder: |
         🫧 <ex. 예시 로그>
