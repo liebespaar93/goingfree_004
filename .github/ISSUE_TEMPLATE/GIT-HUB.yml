@@ -79,3 +79,11 @@ body:
         - <선택지3>
     validations:
       required: true
+  - type: checkboxes
+    id: checkboxes_id
+    attributes:
+      label: 📣 <질문 사항(체크 박스)>
+      description: 💭 <옅은 설명글>
+      options:
+        - label: <체크항목 1>
+          required: true
