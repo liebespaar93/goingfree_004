@@ -33,7 +33,7 @@ body:
         - [ ] test3
         ...
         render: bash 
-      value: 
+      value: |
         - [ ] test
         - [ ] test2
         - [ ] test3
