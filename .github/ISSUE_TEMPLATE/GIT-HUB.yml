@@ -1,4 +1,4 @@
-name: ":octocat: 이슈 보고서"
+name: :octocat: 이슈 보고서
 description: 이슈에 대한 보고서입니다
 title: ":octocat:[이슈]: "
 labels: [":octocat: 깃허브", ":dependabot: 봇"]
@@ -11,8 +11,8 @@ body:
       value: |
         # ℳ 마크다운 작성부분입니다.
         [마크다운을 지원합니다](#)
-        - 다음줄에 기입이 가능하며
-        - [ ] 깃 허브 마크다운으로 작동합니다
+          - 다음줄에 기입이 가능하며
+          - [ ] 깃 허브 마크다운으로 작동합니다
   - type: input
     id: input_id
     attributes:
