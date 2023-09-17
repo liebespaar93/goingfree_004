@@ -68,3 +68,24 @@ body:
       default: 1
     validations:
       required: true
+  - type: dropdown
+    id: dropdown_id_mult
+    attributes:
+      label: 📣 <질문 사항(드롭 박스 멀티)>
+      multiple: true
+      options:
+        - <선택지1>
+        - <선택지2>
+        - <선택지3>
+  - type: checkboxes
+    id: checkboxes_id
+    attributes:
+      label: 📣 <질문 사항(체크 박스)>
+      description: 💭 <옅은 설명글>
+      options:
+        - label: <체크항목 1>
+          required: true
+        - label: <체크항목 2>
+          required: true
+        - label: <체크항목 2>
+          required: false
