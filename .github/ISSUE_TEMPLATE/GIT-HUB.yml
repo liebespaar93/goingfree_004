@@ -50,11 +50,6 @@ body:
         Counting objects: 100% (7/7), done.
         Delta compression using up to 8 threads
         Compressing objects: 100% (3/3), done.
-        Writing objects: 100% (3/3), 1.01 KiB | 1.01 MiB/s, done.
-        Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
-        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-        remote: error: GH006: Protected branch update failed for refs/heads/dev.
-        remote: error: Changes must be made through a pull request.
       render: 'shell'
     validations:
       required: false
