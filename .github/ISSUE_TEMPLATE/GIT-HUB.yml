@@ -21,4 +21,8 @@ body:
       placeholder: ex. email
     valudations:
       false
-  
+  - type: textarea
+  id: what-happend
+  attributes:
+    label: what happend?
+  validations: true
