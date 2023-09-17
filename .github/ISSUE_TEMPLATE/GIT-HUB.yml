@@ -37,7 +37,7 @@ body:
         - [ ] 더입력 ...
       render: ''
     validations:
-      required: false
+      required: true
   - type: textarea
     id: textarea_id_log
     attributes:
@@ -54,7 +54,7 @@ body:
         Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
       render: 'shell'
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: dropdown_id_single
     attributes:
