@@ -32,7 +32,6 @@ body:
         - [ ] test2
         - [ ] test3
         ...
-      render: bash
     validations:
       required: true
   - type: dropdown
