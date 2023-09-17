@@ -1,10 +1,10 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: []
+name: :octocat: 이슈 보고서
+description: 이슈에 대한 보고서입니다
+title: ":octocat:[이슈]: "
+labels: [":octocat: 깃허브", ":dependabot: 봇"]
+projects: ["github/1", "bot/1"]
 assignees:
-  - octocat
+  - github
 body:
   - type: markdown
     attributes:
