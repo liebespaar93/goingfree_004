@@ -46,6 +46,9 @@ body:
       placeholder: |
         🫧 <ex. 예시 로그>
         % git push
+        Enumerating objects: 7, done.
+        Counting objects: 100% (7/7), done.
+        Delta compression using up to 8 threads
       render: 'shell'
     validations:
       required: false
