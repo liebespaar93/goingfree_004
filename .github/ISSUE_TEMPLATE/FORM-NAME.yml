@@ -32,8 +32,8 @@ body:
         - [ ] test2
         - [ ] test3
         ...
-        render: bash
-        |
+        render: bash 
+      value: 
         - [ ] test
         - [ ] test2
         - [ ] test3
