@@ -10,15 +10,15 @@ body:
     attributes:
       value: |
         # ℳ 마크다운 작성부분입니다.
-        # test all 
-        - 되나
-        - [ ] test
+        [마크다운을 지원합니다](#)
+        - 다음줄에 기입이 가능하며
+        - [ ] 깃 허브 마크다운으로 작동합니다
   - type: input
-    id: contact
+    id: input_id
     attributes:
-      label: aa Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: 📣 <질문 사항(텍스트 박스)>
+      description: 💭 <옅은 설명글>
+      placeholder: 🫧 <ex. 예시 문장>
     validations:
       required: false
   - type: textarea
