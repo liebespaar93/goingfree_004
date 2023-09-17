@@ -40,11 +40,12 @@ body:
     attributes:
       label: Version
       description: What version of our software are you running?
-      multiple: false
+      multiple: true
       options:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
-      default: 0
+        - 1.0.4 (Edge)
+      default: 1
     validations:
       required: true
   - type: dropdown
