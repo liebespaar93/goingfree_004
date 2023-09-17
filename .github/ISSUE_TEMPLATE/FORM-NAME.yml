@@ -32,6 +32,12 @@ body:
         - [ ] test2
         - [ ] test3
         ...
+        render: bash
+        |
+        - [ ] test
+        - [ ] test2
+        - [ ] test3
+        ...
     validations:
       required: true
   - type: dropdown
