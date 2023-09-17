@@ -58,6 +58,9 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+      default: [1]
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
