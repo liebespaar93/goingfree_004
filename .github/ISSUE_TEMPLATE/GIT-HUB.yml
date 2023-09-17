@@ -1,7 +1,7 @@
 name: "⚜ 이슈 보고서"
 description: "📋 이슈에 대한 보고서입니다"
 title: "⚜ [이슈]: "
-labels: ["🅶🅖 깃허브", "🤖 봇"]
+labels: ["🌑 깃허브", "🤖 봇"]
 projects: ["github/1", "bot/1"]
 assignees:
   - github
@@ -20,13 +20,16 @@ body:
       description: 💭 <옅은 설명글>
       placeholder: 🫧 <ex. 예시 문장>
     validations:
-      required: false
+      required: true
   - type: textarea
-    id: what-happened
+    id: textarea_id
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      label: 📣 <질문 사항(텍스트 어레이)>
+      description: 💭 <옅은 설명글>
+      placeholder: |
+        🫧 <ex. 예시 지문>
+        - [ ] check_1
+        - [ ] check_2
       value: |
         - [ ] test
         - [ ] test2
@@ -34,7 +37,7 @@ body:
         ...
       render: ''
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: version
     attributes:
