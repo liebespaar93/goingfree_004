@@ -87,3 +87,5 @@ body:
       options:
         - label: <체크항목 1>
           required: true
+        - label: <체크항목 1>
+          required: true
