@@ -10,6 +10,9 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+        # test all 
+        - 되나
+        - [ ] test
   - type: input
     id: contact
     attributes:
