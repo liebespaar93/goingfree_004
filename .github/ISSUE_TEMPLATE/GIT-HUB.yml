@@ -12,4 +12,13 @@ body:
         Thanks for taking the time to fill out this bug report!
         # test all 
         - 되나
-        - [ ] test
+        - [ ] test 
+  - type: input
+    id: contact
+    attributes:
+      label: test
+      description: test
+      placeholder: ex. email
+    valudations:
+      false
+  
