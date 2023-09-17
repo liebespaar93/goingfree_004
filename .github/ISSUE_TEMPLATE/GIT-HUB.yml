@@ -64,6 +64,9 @@ body:
         - <선택지1>
         - <선택지2>
         - <선택지3>
+    validations:
+      required: true
+
   - type: checkboxes
     id: checkboxes_id
     attributes:
@@ -76,3 +79,16 @@ body:
           required: true
         - label: <체크항목 2>
           required: false
+  - type: dropdown
+    id: dropdown_id_single
+    attributes:
+      label: 📣 <질문 사항(드롭 박스 싱글)>
+      description: 💭 <옅은 설명글>
+      multiple: false
+      options:
+        - <선택지1>
+        - <선택지2>
+        - <선택지3>
+      default: 1
+    validations:
+      required: true
