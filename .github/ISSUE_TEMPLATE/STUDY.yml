@@ -6,6 +6,19 @@ projects: ["liebespaar93/4"]
 assignees:
   - liebespaar93
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # 학습 작성
+        
+        학습목록 추천 부분에 대한 링크
+        
+        - [🚀 준비중1](#)
+        - [🚀 준비중2](#)
+        
+        ## 학습 작성 방법
+          - 다음줄에 기입이 가능하며
+          - 깃 허브 마크다운으로 작동합니다
   - type: input
     id: input_name
     attributes:
@@ -27,7 +40,7 @@ body:
     validations:
       required: false
   - type: input
-    id: input_name
+    id: input_parent
     attributes:
       label: 📣 상위 학습단계를 기입해주세요
       description: 💭 상위 학습단계 작성(없을시 root)
