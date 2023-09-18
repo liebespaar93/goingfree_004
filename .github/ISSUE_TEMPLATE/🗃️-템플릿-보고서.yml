@@ -6,6 +6,16 @@ projects: ["liebespaar93/4"]
 assignees:
   - liebespaar93
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # 템플릿 작성
+
+        가이드라인 [🚀 링크](https://gist.github.com/liebespaar93/0590fb2eb01aeb38d8f57a25933b8f65#file-simple_template-yml) 를 확인해 주세요
+
+        ## 템플릿 작성 방법
+          - 다음줄에 기입이 가능하며
+          - 깃 허브 마크다운으로 작동합니다
   - type: input
     id: input_name
     attributes:
