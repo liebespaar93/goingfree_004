@@ -14,3 +14,11 @@ body:
         ## 템플릿 작성 방법
           - 다음줄에 기입이 가능하며
           - 깃 허브 마크다운으로 작동합니다
+  - type: input
+    id: input_name
+    attributes:
+      label: 📣 템플릿 이름
+      description: 💭 템픞릿의 이름을 작성해 주세요
+      placeholder: 🫧 <이름>
+    validations:
+      required: true
