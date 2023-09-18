@@ -5,8 +5,8 @@
 # projects: ["liebespaar93/4"]
 # assignees:
 #   - liebespaar93
-name: Bug Report
-description: File a bug report
+name: Bug Report2
+description: File a bug report2
 title: "[Bug]: "
 labels: ["bug", "triage"]
 projects: []
