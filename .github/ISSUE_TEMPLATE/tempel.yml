@@ -59,7 +59,6 @@ body:
       label: 📣 작성자 동의
       description: 💭 작성자 동의서
       options:
-        - label: 📌 작성자는 모든 작업에 대한 정보가 공개됨을 동의함니까?
-          required: true
+        - label: 🔱 타이틀에 템플릿에 이름을 추가하였습니까?
         - label: 📌 작성자는 모든 작업에 대한 정보가 공개됨을 동의함니까?
           required: true
