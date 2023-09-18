@@ -1,10 +1,3 @@
-# name: "🗃️ 템플릿 보고서"
-# description: "템플릿에 설정에 대한 보고서입니다"
-# title: "🗃️ [템플릿]: "
-# labels: ["📝 문서", "🗃️ 템플릿"]
-# projects: ["liebespaar93/4"]
-# assignees:
-#   - liebespaar93
 name: Bug Report2
 description: File a bug report2
 title: "[Bug]: "
