@@ -54,12 +54,16 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: checkboxes_id
+    id: checkboxes_list
     attributes:
-      label: 📣 작성자 동의
-      description: 💭 작성자 동의서
+      label: 📣 작성자 체크리스트
+      description: 💭 작성자 체크리스트
       options:
-        - label: 🔱 타이틀에 템플릿에 이름을 추가하였습니까?
+        - label: 🔱 탬플릿 제목을 적절하게 정하였습니까?
+          required: false
+        - label: 🔱 작업 리스트를 이슈에 맞게 설정하셨습니까?
+          required: false
+        - label: 📍 타이틀에 템플릿에 이름을 추가하였습니까?
           required: true
         - label: 📌 작성자는 모든 작업에 대한 정보가 공개됨을 동의함니까?
           required: true
