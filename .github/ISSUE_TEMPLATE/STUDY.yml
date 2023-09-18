@@ -40,7 +40,7 @@ body:
     validations:
       required: false
   - type: input
-    id: input_name
+    id: input_parent
     attributes:
       label: 📣 상위 학습단계를 기입해주세요
       description: 💭 상위 학습단계 작성(없을시 root)
