@@ -1,7 +1,7 @@
 [
   { "name": "♻️ 리팩토링", "color": "44EA1F", "description": "코드 효율화 작업" },
   { "name": "🌈 헬프", "color": "EDEE82", "description": "도움이 필요함" },
-  { "name": "🎉 배포", "color": "ffffff", "description": "배포 준비 및 배포 완료" },
+  { "name": "🎉 배포", "color": "ffffff", "description": "배포 준비 및 배포 완료" },aa
   { "name": "🎨 디자인", "color": "483C8C", "description": "디자인 작업" },
   { "name": "🏗️ 환경설정", "color": "080A59", "description": "환경 설정" },
   { "name": "🐛 버그", "color": "f63235", "description": "버그 보고" },
