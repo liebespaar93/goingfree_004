@@ -1,7 +1,7 @@
-name: "♻️ 리펙토링"
-description: "리펙토링 과정에 대한 보고서입니다"
-title: "♻️ Refactoring: "
-labels: ["♻️ 리펙토링"]
+name: "📤 업데이트"
+description: "업데이트 과정에 대한 보고서입니다"
+title: "📤 Update: "
+labels: ["📤 업데이트"]
 projects: ["liebespaar93/4"]
 assignees:
   - liebespaar93
@@ -9,28 +9,28 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 리펙토링 작성
+        # 업데이트 작성
 
-        리펙토링 목록 issue 링킹 대한 링크
+        업데이트에 대한 보고서 작성입니다
 
-        ## 리펙토링 작성 방법
+        ## 업데이트 작성 방법
           - 다음줄에 기입이 가능하며
           - 깃 허브 마크다운으로 작동합니다
   - type: input
     id: input_name
     attributes:
-      label: 📣 리펙토링 이름
-      description: 💭 리펙토링의 이름을 작성해 주세요
+      label: 📣 업데이트 이름
+      description: 💭 업데이트의 이름을 작성해 주세요
       placeholder: 🫧 <이름>
     validations:
       required: true
   - type: textarea
     id: textarea_description
     attributes:
-      label: 📣 리펙토링 목적
-      description: 💭 리펙토링 목적을 적어주세요
+      label: 📣 업데이트 목적
+      description: 💭 업데이트 목적을 적어주세요
       placeholder: |
-        🫧 <리펙토링 하는 이유>
+        🫧 <업데이트 하는 이유>
         1. <이유>
         2. <이유>
       render: ''
@@ -39,16 +39,16 @@ body:
   - type: input
     id: input_parent
     attributes:
-      label: 📣 리펙토링 이슈를 기입해주세요
-      description: 💭 리펙토링 이슈 작성
+      label: 📣 업데이트 이슈를 기입해주세요
+      description: 💭 업데이트 이슈 작성
       placeholder: 🫧 <#이슈번호>
     validations:
       required: true
   - type: textarea
     id: textarea_work
     attributes:
-      label: ✅ 리펙토링 리스트
-      description: 💭 리펙토링에 리펙토링 목차를 작성해주세요
+      label: ✅ 업데이트 리스트
+      description: 💭 업데이트에 업데이트 목차를 작성해주세요
       placeholder: |
         🫧 <ex. 예시 지문>
         - [ ] <체크 1>
@@ -67,11 +67,11 @@ body:
       label: 📣 작성자 체크리스트
       description: 💭 작성자 체크리스트
       options:
-        - label: 🔱 리펙토링 제목을 적절하게 정하였습니까?
+        - label: 🔱 업데이트 제목을 적절하게 정하였습니까?
           required: false
-        - label: 🔱 리펙토링 리스트를 이슈에 맞게 설정하셨습니까?
+        - label: 🔱 업데이트 리스트를 이슈에 맞게 설정하셨습니까?
           required: false
-        - label: 📍 타이틀에 리펙토링 이름을 추가하였습니까?
+        - label: 📍 타이틀에 업데이트 이름을 추가하였습니까?
           required: true
         - label: 📌 작성자는 모든 작업에 대한 정보가 공개됨을 동의함니까?
           required: true
