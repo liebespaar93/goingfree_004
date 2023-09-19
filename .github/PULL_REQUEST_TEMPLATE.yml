@@ -1,60 +1,59 @@
+name: Bug Report
+about: File a bug report
+title: "[Bug]: "
 body:
   - type: markdown
     attributes:
       value: |
-        # 삭제 작성
-        
-        ## 삭제 작성 방법
-          - 다음줄에 기입이 가능하며
-          - 깃 허브 마크다운으로 작동합니다
+        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: input_name
+    id: contact
     attributes:
-      label: 📣 삭제 제목
-      description: 💭 삭제 제목을 작성해 주세요
-      placeholder: 🫧 <제목>
-    validations:
-      required: true
-  - type: textarea
-    id: textarea_description
-    attributes:
-      label: 📣 삭제 작업 이유
-      description: 💭 삭제 작업 이유을 적어주세요
-      placeholder: |
-        🫧 <삭제 생성 이유>
-        1. <이유>
-        2. <이유>
-      render: ''
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
       required: false
   - type: textarea
-    id: textarea_work
+    id: what-happened
     attributes:
-      label: ✅ 작업 리스트
-      description: 💭 작업에 연관된 이슈 목록 작성
-      placeholder: |
-        🫧 <ex. 예시 지문>
-        - [ ] <체크 1>
-        - [ ] <체크 2>
-      value: |
-        - [ ] <#이슈 1> <작업 내용>
-        - [ ] <#이슈 2> <작업 내용>
-        - [ ] <#이슈 3> <작업 내용>
-        - [ ] 더입력 ...
-      render: ''
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
-  - type: checkboxes
-    id: checkboxes_list
+  - type: dropdown
+    id: version
     attributes:
-      label: 📣 작성자 체크리스트
-      description: 💭 작성자 체크리스트
+      label: Version
+      description: What version of our software are you running?
       options:
-        - label: 🔱 삭제 제목을 적절하게 정하였습니까?
-          required: false
-        - label: 🔱 작업 리스트를 이슈에 맞게 설정하셨습니까?
-          required: false
-        - label: 📍 타이틀에 삭제 이름을 추가하였습니까?
-          required: true
-        - label: 📌 작성자는 모든 작업에 대한 정보가 공개됨을 동의함니까?
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
           required: true
