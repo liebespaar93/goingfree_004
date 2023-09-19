@@ -1,6 +1,6 @@
 name: "⚡️ 기능"
 description: "기능 추가 대한 보고서입니다"
-title: "⚡️ Function: "
+title: "⚡️ Feat: "
 labels: ["⚡️ 기능"]
 projects: ["liebespaar93/4"]
 assignees:
@@ -46,9 +46,9 @@ body:
         - [ ] <체크 1>
         - [ ] <체크 2>
       value: |
-        - [ ] 체크 1
-        - [ ] 체크 2
-        - [ ] 체크 3
+        - [ ] <작업 1>
+        - [ ] <작업 2>
+        - [ ] <작업 3>
         - [ ] 더입력 ...
       render: ''
     validations:
