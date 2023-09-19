@@ -47,7 +47,7 @@ body:
   - type: textarea
     id: textarea_work
     attributes:
-      label: 📣 리펙토링 리스트
+      label: ✅ 리펙토링 리스트
       description: 💭 리펙토링에 리펙토링 목차를 작성해주세요
       placeholder: |
         🫧 <ex. 예시 지문>

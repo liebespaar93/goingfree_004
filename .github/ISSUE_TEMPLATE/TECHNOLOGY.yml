@@ -39,7 +39,7 @@ body:
   - type: textarea
     id: textarea_work
     attributes:
-      label: 📣 작업 리스트
+      label: ✅ 작업 리스트
       description: 💭 작업에 필요한 목록 작성
       placeholder: |
         🫧 <ex. 예시 지문>

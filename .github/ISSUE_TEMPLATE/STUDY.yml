@@ -50,7 +50,7 @@ body:
   - type: textarea
     id: textarea_work
     attributes:
-      label: 📣 학습 리스트
+      label: ✅ 학습 리스트
       description: 💭 학습에 학습 목차를 작성해주세요
       placeholder: |
         🫧 <ex. 예시 지문>
