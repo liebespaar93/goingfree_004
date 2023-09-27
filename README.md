@@ -1,14 +1,6 @@
-cc src_env/**.c src_tool/**.c -I include/
 
-
-cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c  -I include/ -I include/builtin/
-
-cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c src_dir/**.c -I include/ -I include/builtin/ 
-
- cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c src_dir/**.c src_file/**.c -I include/ -I include/builtin/  -lreadline
-
-cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c src_dir/**.c src_file/**.c src_terminal/**.c  -I include/ -I include/builtin/  -lreadline
-
-cc -Wall -Werror -Wextra main.c src_env_tool/**.c src_export_tool/**.c src_builtin/**.c src_tool/**.c src_global/**.c src_dir/**.c src_file/**.c src_terminal/**.c  -I include/ -I include/builtin/  -lreadline
-
- "\'`@$><=;|&{(
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yceffort&theme=react)
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yceffort&theme=react)
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=yceffort&theme=react)
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=yceffort&theme=react)
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=yceffort&theme=react&utcOffset=8)
