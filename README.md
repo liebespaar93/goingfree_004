@@ -1,3 +1,57 @@
+
+> :bulb:**Tip:**
+>
+> If you're a complete beginner to web development, [start here](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web#the_story_of_your_first_website).
+> 
+> [!ATTENTION]
+> An alert of type 'attention' using global style 'callout'.
+
+> ✅ Check
+> This is OK
+
+> **Note**
+> This is a note
+
+> [!WARNING]  
+> `BufferGeometry` 메서드는  
+> 일반적으로 한 구간에서만 사용되며 루프 구간에서 사용되지 않습니다.  
+> 일반적인 리얼타임 메쉬 이동은 Object3D.position 를 사용하세요.
+
+> [!Note]
+> test
+
+
+> [!ERROR]
+> test
+
+
+> [!WARNING]
+> test
+
+
+> [!IMPORTANT]
+> test
+
+
+> [!TIP]
+> test
+
+
+> [!CHECK]
+> test
+
+
+| Note | > [!Note] | 인용을 이용한 노트 표시 |
+| Note | > [!ERROR] | 인용을 이용한 에러 표시 |
+| Note | > [!WARNING] | 인용을 이용한 경고 표시 |
+| Note | > [!IMPORTANT] | 인용을 이용한 중요 표시 |
+| Note | > [!TIP] | 인용을 이용한 팁 표시 |
+| Note | > [!Check] | 인용을 이용한 체크 표시 |
+
+
+> [!Warring]
+> test
+> 
 ![mac_call](https://github.com/liebespaar93/goingfree_004/assets/82822684/08fd4abc-9b30-4e0a-9964-de197cb35a0d)
 ![call_mac](https://github.com/liebespaar93/goingfree_004/assets/82822684/8ec43a83-87bf-4353-b204-1718e2f855d5)
 
